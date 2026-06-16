@@ -1,0 +1,59 @@
+Nome: Dragoon F
+Preço: 150.00
+Geração: plastico
+Descrição: O clássico Beyblade de ataque do Tyson. Focado em velocidade e poder explosivo na arena.
+URL: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfzIizKJLuQiCHJX4ZNRlLLjvn68WebuWRP8uLdb9LBUs0VwWh35HZVMFK&s=10
+
+Nome: Dranzer S
+Preço: 145.00
+Geração: plastico
+Descrição: Beyblade de equilíbrio do Kai. Possui ponta ajustável que alterna entre resistência e ataque.
+URL: https://m.media-amazon.com/images/I/61OdtBDa43L.jpg
+
+Nome: Storm Pegasus
+Preço: 120.00
+Geração: metal
+Descrição: Beyblade lendário do Gingka. Possui uma roda de fusão feita para ataques contínuos e agressivos.
+URL: https://http2.mlstatic.com/D_Q_NP_2X_771832-MLB93212757127_092025-T.webp
+
+Nome: Lightning L-Drago
+Preço: 135.00
+Geração: metal
+Descrição: O dragão proibido de rotação reversa. Projetado para roubar a energia do oponente durante os impactos.
+URL: https://http2.mlstatic.com/D_NQ_NP_660617-MLB82093578744_022025-O.webp
+
+Nome: Earth Eagle
+Preço: 110.00
+Geração: metal
+Descrição: Defesa impecável. Uma fortaleza na arena com altíssima resistência a impactos e estabilidade perfeita.
+URL: https://i.ebayimg.com/images/g/0z0AAOSwxAFd1255/s-l400.jpg
+
+Nome: Victory Valkyrie
+Preço: 160.00
+Geração: burst
+Descrição: Lâminas afiadas para ataques rápidos e destrutivos, com alta chance de causar eclosões (bursts).
+URL: https://cdnhuawei.lojavirtuolpro.com/beyblader/produto/20250729232104_531096_D.webp
+
+Nome: Storm Spriggan
+Preço: 155.00
+Geração: burst
+Descrição: Extrema versatilidade. Consegue mesclar estilos de ataque e defesa dependendo do ângulo de lançamento.
+URL: https://m.media-amazon.com/images/I/712SwT9JClL._AC_UF894,1000_QL80_.jpg
+
+Nome: Lançador Dupla Rotação (LR)
+Preço: 85.00
+Geração: acessorio
+Descrição: Lançador avançado de engrenagens que permite disparar o Beyblade tanto para a direita quanto para a esquerda.
+URL: https://americanas.vtexassets.com/arquivos/ids/24299735/2501608250_1_xlarge.jpg?v=638755386586930000
+
+Nome: Launcher Grip (Manopla)
+Preço: 60.00
+Geração: acessorio
+Descrição: Cabo ergonômico para acoplar ao lançador padrão. Garante muito mais firmeza, mira e força no disparo.
+URL: https://http2.mlstatic.com/D_NQ_NP_825110-MLB76756722635_052024-O-grip-launcher-para-lancador-beyblade-burst-so-a-empunhadura.webp
+
+Nome: Arena Beystadium Standard
+Preço: 250.00
+Geração: acessorio
+Descrição: Arena oficial de competição. Possui curvatura calculada e três saídas laterais para batalhas dinâmicas e justas.
+URL: https://rihappy.vtexassets.com/arquivos/ids/7777203-800-auto?v=638772093535230000&width=800&height=auto&aspect=true

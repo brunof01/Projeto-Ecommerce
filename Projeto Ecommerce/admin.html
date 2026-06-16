@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bey Store Brasil - Dashboard Admin</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-sky-700 min-h-screen text-white">
+
+    <div class="container mx-auto p-6">
+        <div class="flex justify-between items-center mb-8 border-b border-sky-600 pb-4">
+            <h1 class="text-4xl font-bold">Painel ADM</h1>
+            <button onclick="location.href='index.html'"
+                class="bg-yellow-400 text-black font-bold py-2 px-4 rounded-lg text-sm">Sair do Painel</button>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-lg mb-8 text-black">
+            <h2 class="text-2xl font-bold mb-4 border-b border-gray-200 pb-2">Cadastrar novo produto</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                    <p class="mb-1 font-bold text-sm text-gray-700">Nome do Beyblade / Equipamento:</p>
+                    <input id="nomeProduto" type="text" placeholder="Galaxy Pegasus" class="w-full p-2 border border-gray-300 rounded-lg text-sm bg-gray-50">
+                </div>
+                <div>
+                    <p class="mb-1 font-bold text-sm text-gray-700">Preço Base (R$):</p>
+                    <input id="precoProduto" type="number" placeholder="0.00"
+                        class="w-full p-2 border border-gray-300 rounded-lg text-sm bg-gray-50">
+                </div>
+                <div>
+                    <p class="mb-1 font-bold text-sm text-gray-700">Geração (Categoria):</p>
+                    <select id="geracaoProduto" class="w-full p-2 border border-gray-300 rounded-lg text-sm bg-gray-50">
+                        <option value="plastico">Plástico (Clássica)</option>
+                        <option value="metal">Metal Fight</option>
+                        <option value="burst">Burst</option>
+                        <option value="acessorio">Acessórios / Lançadores</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="mb-1 font-bold text-sm text-gray-700">URL da imagem:</p>
+                    <input id="imagemProduto" type="text" placeholder="URL da imagem"
+                        class="w-full p-2 border border-gray-300 rounded-lg text-sm bg-gray-50">
+                </div>
+            </div>
+
+            <p class="mb-1 font-bold text-sm text-gray-700">Descrição</p>
+            <input id="descricaoProduto" type="text" placeholder="Detalhes do produto"
+                class="w-full mb-4 p-2 border border-gray-300 rounded-lg text-sm bg-gray-50 h-16">
+
+            <button id="btnSalvarProduto" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-5 rounded-lg transition text-sm">Cadastrar produto</button>
+            <table class="w-full text-left border-collapse border border-gray-300 mt-6">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="p-3 border border-gray-300 text-sm font-bold text-gray-700 text-center">Foto</th>
+                        <th class="p-3 border border-gray-300 text-sm font-bold text-gray-700">Nome</th>
+                        <th class="p-3 border border-gray-300 text-sm font-bold text-gray-700">Preço (R$)</th>
+                        <th class="p-3 border border-gray-300 text-sm font-bold text-gray-700">Geração</th>
+                        <th class="p-3 border border-gray-300 text-sm font-bold text-gray-700 text-center">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaProdutos"></tbody>
+            </table>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-lg text-black">
+            <h2 class="text-2xl font-bold mb-4 border-b border-gray-200 pb-2">Gerenciamento de usuários</h2>
+            <input type="hidden" id="idEdicaoUsuario">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mb-6 items-end">
+                <div>
+                    <p class="mb-1 font-bold text-sm text-gray-700">Nome:</p>
+                    <input id="nomeUsuario" type="text" placeholder="Nome"
+                        class="w-full p-2 border border-gray-300 rounded-lg text-sm bg-gray-50">
+                </div>
+                <div>
+                    <p class="mb-1 font-bold text-sm text-gray-700">E-mail:</p>
+                    <input id="emailUsuario" type="text" placeholder="email"
+                        class="w-full p-2 border border-gray-300 rounded-lg text-sm bg-gray-50">
+                </div>
+                <div>
+                    <p class="mb-1 font-bold text-sm text-gray-700">Senha:</p>
+                    <input id="senhaUsuario" type="password" placeholder="Senha"
+                        class="w-full p-2 border border-gray-300 rounded-lg text-sm bg-gray-50">
+                </div>
+                <div>
+                    <p class="mb-1 font-bold text-sm text-gray-700">Nível de Acesso:</p>
+                    <select id="tipoUsuario" class="w-full p-2 border border-gray-300 rounded-lg text-sm bg-gray-50">
+                        <option value="cliente">Cliente</option>
+                        <option value="administrador">Usuário ADM</option>
+                    </select>
+                </div>
+                <button id="btnSalvarUsuario"
+                    class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2.5 px-4 rounded-lg transition text-sm">Adicionar</button>
+            </div>
+
+            <table class="w-full text-left border-collapse border border-gray-300 mt-4">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="p-3 border border-gray-300 text-sm font-bold text-gray-700">Nome</th>
+                        <th class="p-3 border border-gray-300 text-sm font-bold text-gray-700">E-mail</th>
+                        <th class="p-3 border border-gray-300 text-sm font-bold text-gray-700">Tipo</th>
+                        <th class="p-3 border border-gray-300 text-sm font-bold text-gray-700 text-center">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaUsuarios"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@9.0.0/dist/pouchdb.min.js"></script>
+    <script src="db.js"></script>
+    <script src="scriptProdutos.js"></script>
+    <script src="scriptUsuarios.js"></script>
+</body>
+
+</html>

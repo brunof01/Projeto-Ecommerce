@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Projeto Ecommerce</title>
+    <title>Bey Store Brasil</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
 </head>
-<body>
-    
+<body class="bg-sky-700 min-h-screen text-white">
+
+    <div class="container mx-auto p-6">
+        <div class="flex justify-between items-center mb-8 border-b border-sky-600 pb-4">
+            <h1 class="text-4xl font-bold">Bey Store Brasil</h1>
+            <div class="flex gap-2">
+                <button onclick="location.href='index.html'" class="bg-blue-800 hover:bg-yellow-400 hover:text-black hover:font-bold text-white font-bold py-2 px-4 rounded-lg text-sm">Home</button>
+                <button id="login" onclick="location.href='login.html'" class="bg-blue-800 hover:bg-yellow-400 hover:text-black hover:font-bold text-white font-bold py-2 px-4 rounded-lg text-sm">Login</button>
+                <button id="destruir" class="bg-blue-800 hover:bg-yellow-400 hover:text-black hover:font-bold text-white font-bold py-2 px-4 rounded-lg text-sm">Destruir db</button>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-2 flex-wrap mb-8">
+            <button id="btn-todas" onclick="renderizarHome('todas')" class="bg-blue-800 hover:bg-yellow-400 hover:text-black hover:font-bold font-medium py-2 px-4 rounded-xl text-sm">Todas as Gerações</button>
+            <button id="btn-plastico" onclick="renderizarHome('plastico')" class="bg-blue-800 hover:bg-yellow-400 hover:text-black hover:font-bold font-medium py-2 px-4 rounded-xl text-sm">Clássica (Plástico)</button>
+            <button id="btn-metal" onclick="renderizarHome('metal')" class="bg-blue-800 hover:bg-yellow-400 hover:text-black hover:font-bold font-medium py-2 px-4 rounded-xl text-sm">Metal Fight</button>
+            <button id="btn-burst" onclick="renderizarHome('burst')" class="bg-blue-800 hover:bg-yellow-400 hover:text-black hover:font-bold font-medium py-2 px-4 rounded-xl text-sm">Burst</button>
+            <button id="btn-acessorio" onclick="renderizarHome('acessorio')" class="bg-blue-800 hover:bg-yellow-400 hover:text-black hover:font-bold font-medium py-2 px-4 rounded-xl text-sm">Acessórios</button>
+        </div>
+
+        <h2 id="tituloDestaque" class="text-2xl font-bold mb-6">Produtos em destaque</h2>
+        <div id="gridDestaques" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+        <h2 id="tituloOutros" class="text-2xl font-bold mt-6 mb-6 hidden">Mais produtos</h2>
+        <div id="gridTodos" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@9.0.0/dist/pouchdb.min.js"></script>
+    <script src="db.js"></script>
+    <script src="scriptProdutos.js"></script>
+    <script src="scriptUsuarios.js"></script>
 </body>
 </html>
