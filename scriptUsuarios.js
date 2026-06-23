@@ -144,20 +144,20 @@ async function prepararEdicaoUsuario(id){
     }
 }
 
-async function deletarUsuario(id) {
-    if (confirm("Essa ação não pode ser desfeita. Excluir usuário?")) {
-        try {
+async function deletarUsuario(id){
+    if (confirm("Essa ação não pode ser desfeita. Excluir usuário?")){
+        try{
             const usuario = await dbUsuarios.get(id);
             await dbUsuarios.remove(usuario);
             renderizarUsuarios();
-        } catch(error) {
+        } catch(error){
             console.log("Erro ao excluir usuário:", error);
         }
     }
 }
 
 const btnSalvarUsuario = document.getElementById('btnSalvarUsuario');
-if (btnSalvarUsuario) {
+if (btnSalvarUsuario){
     btnSalvarUsuario.onclick = manipularUsuario;
 }
 
